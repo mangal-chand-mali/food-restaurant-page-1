@@ -1,0 +1,377 @@
+<html>
+    <head>
+        <title>Event booking info.</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            body{
+                margin: 0px;
+                padding: 0px;
+                background:#f3f3f3;
+            }
+            .event{
+                position: relative;
+            }.event i{
+                position: fixed;
+                display: inline-block;
+                top:90%;
+                left:95%;
+                font-size: 50px;
+                width: fit-content;
+                height: max-content;
+                color: #ff511c;
+            }.event-img img{
+                width:100%;
+                height: 100%;
+            }.event{
+                margin-top: -35%;
+                text-align: center;
+                margin-left: 360px;
+                color: white;
+                line-height: 50px;
+                position: absolute;
+                font-size: 30px;
+                
+            }.event label{
+                font-size: 30px;
+                color: red;
+            }.event h1{
+                font-size: 70px;
+                margin-top: -10px;
+            }.event h2{
+                font-size: 80px;
+                line-height: 40px;
+            }
+            
+           
+           .online-book{
+                margin-top: 50px;
+                margin-left: 60px;
+            } .online-book h2{
+                font-size: 25px;
+                font-family: Lucida Sans;
+                color: red;
+            } .online-book h1{
+               font-size: 55px;
+            }
+
+            .table{
+                margin-top:40px;
+                margin-left: 50px;
+                float: left;
+            }.table-th{
+                text-align: left;
+                padding-top: 30px;
+            }.table-td input{
+               padding: 10px;
+               width: 200px;
+               color: black;
+               background: silver;
+               border: none;
+               border-top: 2px solid red;
+            }.table-td input:hover{
+               border:1px solid red;
+               cursor: pointer;
+            }.masseage input{
+                width: 650px;
+                height: 120px;
+                padding-bottom:80px;
+                background: silver;
+                border: none;
+                border-top: 2px solid red;
+            }.masseage input:hover{
+               border:1px solid red;
+               cursor: pointer;
+            }.book-button-1{
+                width:230px;
+                height:60px;
+                color:white;
+                font-weight: bold;
+                background: #ff511c;
+                font-size:20px;
+                margin-left:0px;
+                margin-top:30px;
+                margin-bottom: 20px;
+                border:2px solid #ff511c;
+            }.book-button-1:hover{
+                width: 250px;
+                background:red;
+                border:2px solid red;
+                box-shadow: 5px 5px 5px black;
+                cursor: pointer;
+            }.Odear-img{
+                display: flex;  
+            }.Odear-img h1{
+               margin-top: -200px;
+               margin-left: 100px;
+            }.Odear-img img{
+               width: 500px;
+               margin-left: 20px;
+               border-radius: 25px;
+            }
+
+
+
+            .gallery-box{
+                margin-top:70px;
+                margin-left:90px;
+            
+            }.gallery{
+                width:260px;
+                height:300px;
+                border: 2px solid #f3f3f3;
+            }.gallery:hover{
+                border: 2px solid red;
+                border-radius: 5px;
+                opacity:0.8;
+                cursor: pointer;
+            }.events-button{
+                margin-left:480px;
+                margin-top:30px;	
+            }.events-button-1{
+                height:50px;
+                width:180px;
+                color:white;
+                background: #ff511c;
+                font-weight: bold;
+                font-size:20px;
+                border:2px solid #ff511c;	
+            }.events-button-1:hover{
+                background:red;
+                border:2px solid red;
+                cursor: pointer;
+                color: white;
+            }.events-button-2{
+                margin-left:22px;
+                height:50px;
+                width:280px;
+                color: white;
+                background: #ff511c;
+                font-weight: bold;
+                font-size:20px;
+                border:2px solid  #ff511c;	
+            }.events-button-2:hover{
+                color:white;
+                background:red;
+                border:2px solid red;
+                cursor: pointer;
+            }
+            
+            
+
+            
+            .footer .footer-2{
+                margin-top: 90px;
+                height: 71%;
+                display: flex;
+                background:#272727;
+            }.about-1{
+                color:white;
+                line-height: 5px;
+                margin-left:60px;
+                margin-right: 310px;
+                float:left;	
+            }#hr-1{
+                border-top: 2px solid red;
+                width:67px;
+                margin-top:-55px;
+                margin-bottom:60px;
+                cursor: pointer;
+            }.about-1 h1{
+                padding-bottom:50px;
+                cursor: pointer;
+            }.about-1 h4{
+                cursor: pointer;
+            }.about-1 h3{
+                padding-bottom: 10px;
+                cursor: pointer;
+            }.about-center{
+                float:left;
+                display: block;
+            }.about-center-img{
+                width:400px;
+                height:200px;
+                margin-left: -130px;
+                padding-left:10px;
+            }.about-center h3{
+                color:white;
+                font-size:27px;
+                margin-left:-110px;
+                margin-top:20px;	
+            }.about-center i{
+                color: #ff511c; 
+                text-align: center;
+                right: 100px;
+                padding-left: 10px;
+                font-size:50px;
+            }.about-center i:hover{
+                color: red;
+                cursor: pointer;
+            }.about-right{
+                display: inline-block;
+                color:white;
+                margin-left:240px;
+                line-height:30px;
+                text-decoration: none;
+            }.link{
+                color:white;
+                font-size: 12px;
+                margin-left: 70px;
+                text-align: right;
+            }.about-right a{
+                color:white;
+                font-size: 12px;
+                text-decoration: none;
+            }.link a:hover{
+                color:red;
+                text-decoration: underline;
+            }#hr-2{
+                border-top: 4px solid red;
+                width:65px;
+                margin-top:-20px;
+                margin-bottom:60px;
+            }
+
+
+            .bottom-hr{
+                margin-top:-50px;
+            }.bottom-content{
+            color: white;
+            margin: 0px;
+            text-align: center;
+            }
+       </style>
+    </head>
+    <body>
+        <div class="event-img">
+            <img src=".\Photos\book-event-img.jpg"/>
+        </div>
+        <div class="event">
+            <a href="Project_Mangal_Mali.html" style="text-decoration: none;color: white;"><h3>Home</a> <label><a href="#" style="text-decoration: none;color: red;"> / Book Events</label></h3></a>
+            <h1>Book Our Events</h1>
+            <h2>The Food Center</h2>
+            <div>
+                <a href="Project_Mangal_Mali.html"><i class="fa-solid fa-arrow-up-from-square"></i> <i class="fa-solid fa-house-user"></i></a>
+            </div> 
+        </div>
+       
+
+        <div class="online-book">        
+            <h1>online reservation</h1>
+            <h2>----   Book a table =>  613-518-7434</h2>
+        </div>
+        <table class="table" cellspacing="15px">
+            <tr class="table-tr">
+                <th class="table-th">Your Name</th>
+                <th class="table-th">Your Email</th>
+                <th class="table-th">Your Phone</th>
+            </tr>
+            <tr>
+                <td class="table-td"><input type="text" name="text" placeholder="Your Name"/></td>
+                <td class="table-td"><input type="email" name="email" placeholder="Your Email"/></td>
+                <td class="table-td"><input type="text" name="number" placeholder="Your Number"/></td>
+            </tr>
+            <tr>
+                <th class="table-th">How many person ?</th>
+                <th class="table-th">Pick a Date</th>
+                <th class="table-th">Time</th>
+            </tr>
+            <tr>
+                <td class="table-td"><input type="number" name="number" placeholder="How many person ?"/></td>
+                <td class="table-td"><input type="date" name="date" placeholder="Pick a Date"/></td>
+                <td class="table-td"><input type="time" name="time" placeholder="Time"/></td>
+            </tr>
+            <tr>
+                <th colspan="3" class="table-th">Masseage</th>            
+            </tr>
+            <tr>
+                <td colspan="3" class="Masseage"><input type="text" name="text" placeholder="Masseage"/></td>   
+            </tr>
+            <tr>
+                <th colspan="3">
+                    <div class="book-button">
+                       <a href="Thank_you.html"><button class="book-button-1">Book A Events</button></a> 
+                    </div>
+                </th>
+            </tr>
+        </table>
+        <div class="Odear-img">
+            <img src=".\Photos\book-events-imgg.avif"/>
+        </div>
+
+        <table class="gallery-box" cellspacing="20px">
+			<tr>
+				<td><img class="gallery" src=".\Photos\Events_img-1.jpeg"/></td>
+				<td><img class="gallery" src=".\Photos\Events_img-2.jpeg"/></td>
+				<td><img class="gallery" src=".\Photos\Events_img-3.jpeg"/></td>
+				<td><img class="gallery" src=".\Photos\Events_img-4.jpeg"/></td>
+			</tr>
+			<tr>
+				<td><img class="gallery" src=".\Photos\Events_img-5.jpeg"/></td>
+				<td><img class="gallery" src=".\Photos\Events_img-6.jpeg"/></td>
+				<td><img class="gallery" src=".\Photos\Events_img-7.jpeg"/></td>
+				<td><img class="gallery" src=".\Photos\Events_img-8.jpeg"/></td>
+			</tr>
+			<tr>
+				<td><img class="gallery" src=".\Photos\Events_img-9.jpeg"/></td>
+				<td><img class="gallery" src=".\Photos\Events_img-10.jpeg"/></td>
+				<td><img class="gallery" src=".\Photos\Events_img-11.jpeg"/></td>
+				<td><img class="gallery" src=".\Photos\Events_img-12.jpeg"/></td>
+			</tr>
+			<tr>
+				<td><img class="gallery" src=".\Photos\Events_img-13.jpeg"/></td>
+				<td><img class="gallery" src=".\Photos\Events_img-14.jpeg"/></td>
+				<td><img class="gallery" src=".\Photos\Events_img-15.jpeg"/></td>
+				<td><img class="gallery" src=".\Photos\Events_img-16.jpeg"/></td>
+			</tr>
+			<tr>
+				<td><img class="gallery" src=".\Photos\Events_img-17.jpeg"/></td>
+				<td><img class="gallery" src=".\Photos\Events_img-18.jpeg"/></td>
+				<td><img class="gallery" src=".\Photos\Events_img-19.jpeg"/></td>
+				<td><img class="gallery" src=".\Photos\Events_img-20.jpeg"/></td>
+			</tr>
+			<tr>
+				<td><img class="gallery" src=".\Photos\Events_img-21.jpeg"/></td>
+				<td><img class="gallery" src=".\Photos\Events_img-22.jpeg"/></td>
+				<td><img class="gallery" src=".\Photos\Events_img-23.jpeg"/></td>
+				<td><img class="gallery" src=".\Photos\Events_img-24.jpeg"/></td>
+			</tr>
+		</table>
+		<div class="events-button">
+			<a href="Load_more_mangal_mali.html"><button class="events-button-1">Load More</button></a><a href="https://www.instagram.com/mr_mangal_saini/"><button class="events-button-2"><i class="fa-brands fa-instagram" style="color: white;"></i>   Follow on Instagram</button></a>	
+		</div>
+
+
+
+        <div class="footer">
+            <div class="footer-2">
+                <div class="about-1">
+                    <h1>CONTACT US</h1>
+                    <hr align="left" id="hr-1"/>
+                    <h4><i class="fa-solid fa-phone-volume" style="color: #f50505;"></i> Call Us</h4>
+                    <h3><pre>  613-518-7434</pre></h3>
+                    <h4><i class="fa-sharp fa-regular fa-envelope" style="color: #ff1605;"></i> Email Us</h4>
+                    <h3><pre>  info@ottawakabab.com</pre></h3>
+                    <h4><i class="fa-solid fa-location-dot" style="color: #f71b02;"></i> Our Location</h4>
+                    <h3><pre>  577 Gladstone Ave Ottawa,</pre><pre>  ON K1R5P2</pre></h3>
+                </div>
+                <div class="about-center">
+                    <img class="about-center-img" src=".\Photos\bottom-logo.png"/>
+                    <h3>Whisper to us about your feelings,<br> and we will prepare what you need<br><font align="center" style="margin-left:42%;">now.</font></h3>
+                    <i class="fa-brands fa-square-facebook " ></i>  <i class="fa-brands fa-square-instagram"></i><i class="fa-brands fa-square-whatsapp"></i>
+                </div>
+                <div class="about-right">
+                    <h1>quick links</h1>
+                    <hr align="right" id="hr-2"/>
+                    <h3 class="link"><a href="Project_Mangal_Mali.html"><h1>Home</h1></a></h3>
+                    <h3 class="link"><a href="Project_Mangal_Mali.html"><h1>Menu</h1></a></h3>
+                    <h3 class="link"><a href="Events_Mangal_Mali.html"><h1>Events</h1></a></h3>
+                    <h3 class="link"><a href="Service_Mangal_Mali.html"><h1>Service</h1></a></h3>
+                    <h3 class="link"><a href="Contect_mangal_mali.html"><h1>Contact</h1></a></h3>
+                </div>
+            </div>
+           
+        </div>
+        <hr class="bottom-hr">
+        <h4 class="bottom-content"> 2017 All Rights Reserved by Scanfcode.<br> &copy  2022 Copyright :<b style="color: red;"> MANGAL CHAND MALI</b> </h4>
+     </body>
+</html>   
